@@ -1,0 +1,27 @@
+[project]
+name = "jd-match-agent"
+version = "0.1.0"
+description = "基于 Function Calling 的 ReAct 智能体：JD 解析与简历匹配分析"
+requires-python = ">=3.12"
+
+# 运行时依赖（Day 1 用 uv sync 安装；Day 5 才开始逐个用到）
+dependencies = [
+    "openai>=1.50",          # OpenAI 兼容 SDK，DeepSeek / 智谱 GLM 都走它
+    "fastapi>=0.115",        # Day 5 服务化
+    "uvicorn[standard]>=0.30",  # Day 5 ASGI 服务器
+    "pydantic>=2.0",         # 数据校验
+    "pydantic-settings>=2.0",   # 从 .env 读配置，密钥不硬编码
+]
+
+# 开发依赖（Day 1 一起装好）
+[dependency-groups]
+dev = [
+    "pytest>=8.0",           # Day 4 测试
+    "ruff>=0.6",             # 全程 lint
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
