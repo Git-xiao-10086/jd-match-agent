@@ -2,12 +2,12 @@
 
 每天完工后对照验收标准打勾。没打勾的天数不往后赶，先补缺口——完成度 > 进度。
 
-## Day 1 — 工程环境 + Git 首秀
-- [ ] uv 安装成功（uv --version 有输出）
-- [ ] GitHub 仓库 jd-match-agent 建好
-- [ ] 骨架文件已 push：README、pyproject.toml、.gitignore、src/、tests/
-- [ ] .env 被 .gitignore 屏蔽（git status 不出现 .env）
-- [ ] 提交历史干净，commit message 带 feat/fix/docs 前缀
+## Day 1 — 工程环境 + Git 首秀 ✅ 2026-10-22 完成
+- [x] uv 安装成功（uv --version 有输出）
+- [x] GitHub 仓库 jd-match-agent 建好（Git-xiao-10086/jd-match-agent）
+- [x] 骨架文件已 push：README、pyproject.toml、.gitignore、src/、tests/
+- [x] .env 被 .gitignore 屏蔽（git status 不出现 .env）
+- [x] 提交历史干净，commit message 带 feat/fix/docs 前缀
 验收：陌生人打开 GitHub 能看到带 README 的项目。
 
 ## Day 2 — API 跑通 + 第一个工具
